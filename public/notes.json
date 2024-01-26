@@ -1,0 +1,28 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Grocery List",
+      "text": "Get milk, eggs, and bread from the store.",
+      "date": "2021-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Reminder",
+      "text": "Call mom on her birthday.",
+      "date": "2022-04-02T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Note 3",
+      "text": "This is note 3",
+      "date": "2024-01-03T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Note 4",
+      "text": "This is note 4",
+      "date": "2023-01-04T00:00:00.000Z"
+    }
+  ]
+}
