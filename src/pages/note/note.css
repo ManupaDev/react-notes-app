@@ -1,0 +1,14 @@
+main {
+  padding-block: 1rem;
+}
+
+p {
+  margin-block: 1rem;
+}
+
+a {
+  display: block;
+  color: var(--color-white);
+  text-decoration: none;
+  padding-bottom: 1rem;
+}

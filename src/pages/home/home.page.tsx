@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Header from './components/Header';
-import NoteCard from './components/NoteCard';
-import { Note } from './types/note';
+import NoteCard from '../../components/NoteCard';
+import { Note } from '../../types/note';
 
-function App() {
+function HomePage() {
 
   const [notes, setNotes] = useState<Note[]>([]);
 
@@ -44,4 +44,4 @@ function App() {
   )
 }
 
-export default App
+export default HomePage
