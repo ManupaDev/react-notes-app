@@ -1,0 +1,36 @@
+.note {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    padding: 1rem 1rem;
+    border: 1px solid var(--color-white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    h1 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .note-message-preview {
+        width: 20ch;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .note-timestamp {
+        font-size: 0.75rem;
+        color: var(--color-ash);
+    }
+
+    .delete-btn {
+        display: none;
+        color: crimson;
+        font-size: 0.75rem;
+    }
+
+    &:hover .delete-btn {
+        display: block;
+    }
+}

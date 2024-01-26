@@ -1,0 +1,34 @@
+#add-note-dialog {
+    /* Center dialog with max width of 60% */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    width: 500px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.25rem;
+    margin-bottom: 2rem;
+}
+
+.primary-title {
+    line-height: 1.75;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}

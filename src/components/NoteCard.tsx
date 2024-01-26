@@ -5,6 +5,8 @@ import dayjs from 'dayjs';
 import { useNavigate } from "react-router-dom";
 dayjs.extend(relativeTime)
 
+import "./NoteCard.css";
+
 type NoteCardProps = Note & {
     deleteNote: (id: number) => void
 };

@@ -23,21 +23,6 @@ main {
   margin-inline: auto;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 0.25rem;
-  margin-bottom: 2rem;
-}
-
-.primary-title {
-  line-height: 1.75;
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
 .btn {
   padding: 0.5rem 1rem;
   border: 1px solid transparent;
@@ -57,62 +42,6 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-  align-items: start;
-
-  .note {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-    padding: 1rem 1rem;
-    border: 1px solid var(--color-white);
-    border-radius: 0.5rem;
-    cursor: pointer;
-
-    h1 {
-      font-size: 1rem;
-      font-weight: 700;
-    }
-
-    .note-message-preview {
-      width: 20ch;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-
-    .note-timestamp {
-      font-size: 0.75rem;
-      color: var(--color-ash);
-    }
-
-    .delete-btn {
-      display: none;
-      color: crimson;
-      font-size: 0.75rem;
-    }
-
-    &:hover .delete-btn {
-      display: block;
-    }
-  }
+  align-items: start; 
 }
 
-#add-note-dialog {
-  /* Center dialog with max width of 60% */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 1rem;
-  width: 500px;
-
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
-  footer {
-    display: flex;
-    gap: 1rem;
-  }
-}

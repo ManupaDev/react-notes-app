@@ -1,4 +1,5 @@
 import { FormEvent, useRef } from "react";
+import "./Header.css"
 
 function Header({ addNote }: { addNote: (params: { title: string; text: string; date: string; }) => void }) {
     const ref = useRef<HTMLDialogElement | null>(null);
