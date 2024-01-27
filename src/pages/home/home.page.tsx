@@ -7,6 +7,8 @@ function HomePage() {
 
   const [notes, setNotes] = useState<Note[]>([]);
 
+  // useEffect with an empty deepndancy array runs immediately when the HomePage component renders
+  // We setData using the data fetched inside the useEffect. 
   useEffect(() => {
     const fetchNotes = async () => {
       const res = await fetch("/notes.json");
