@@ -7,7 +7,7 @@ import "./note.css";
 function NotePage() {
 
     const [note, setNote] = useState<Note | undefined>();
-    const params = useParams();
+    const params = useParams(); // This gives us the params(value for id notes/:id) in the url 
 
     useEffect(() => {
         const fetchNotes = async () => {

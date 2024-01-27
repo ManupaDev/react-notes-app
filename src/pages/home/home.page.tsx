@@ -23,10 +23,12 @@ function HomePage() {
       text,
       date,
     };
+    // Update the notes array by making a copy and adding the new note to the end of the array 
     setNotes([...notes, note]);
   }
 
-  function deleteNote(id: number) {
+  function deleteNote(id: number) {  
+    // Update the notes array by making a copy without the note to be deleted 
     setNotes(notes.filter(note => note.id !== id))
   }
 
@@ -36,6 +38,7 @@ function HomePage() {
       <div className="note-list">
         {
           notes.map(note => (
+            // Spreading the props for easy prop passing without typing everything out
             <NoteCard {...note} deleteNote={deleteNote} />
           ))
         }

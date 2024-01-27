@@ -2,12 +2,14 @@ import { FormEvent, useRef } from "react";
 import "./Header.css"
 
 function Header({ addNote }: { addNote: (params: { title: string; text: string; date: string; }) => void }) {
-    const ref = useRef<HTMLDialogElement | null>(null);
+
+    // Ref can be used to set a variable that sits outside of React lifecycle.  
+    const ref = useRef<HTMLDialogElement | null>(null); //The DOM node of the HTMLDialogElement is stored
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const formData = new FormData(e.currentTarget);
-
+        
         const title = formData.get("title") as string;
         const text = formData.get("message") as string;
 
